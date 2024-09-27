@@ -1,0 +1,24 @@
+<!DOCTYPE noticia [ 
+<!ELEMENT noticia (titular, cabecera, cuerpo?) >
+<!ELEMENT cuerpo (apartado+) >
+<!ELEMENT apartado (subtitulo?, parrafo) >
+<!ELEMENT titular (#PCDATA)>
+<!ELEMENT cabecera (#PCDATA)>
+<!ELEMENT subtitulo (#PCDATA)>
+<!ELEMENT parrafo (#PCDATA)>
+]>
+<noticia>
+    <titular>Hallazgo histórico</titular>
+    <cabecera>Descubren ciudad más antigua de Europa</cabecera>
+    <cuerpo>
+        <apartado>
+            <subtitulo>Los restos tendrán 2 mil años más que las pirámides de Egipto</subtitulo>
+            <parrafo>Un grupo de arqueólogos halló los restos de la que consideran la ciudad más antigua de Europa, de unos
+            7 mil años de antiguedad, y a los que creen son los vestigios de "los primeros mini-Estados" de ese continente.</parrafo>
+        </apartado>
+    </cuerpo>
+</noticia>
+
+
+
+    
