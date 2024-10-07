@@ -87,8 +87,9 @@ hr {
 
 #foot p {
     display: inline-block; 
-    margin: 0; 
-    padding-top: 50px; 
+    margin: -5px; 
+    padding-top: 55px;
+    padding-left: 10px; 
 }
 
 
