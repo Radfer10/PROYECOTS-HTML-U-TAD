@@ -1,0 +1,120 @@
+body {
+    margin: 0; 
+    overflow: hidden;
+    background-color: rgb(13, 55, 82);
+}
+
+#main-iz {
+    margin-top: 15px; 
+    padding: 0; 
+    list-style-type: none;
+    background-color: rgb(123, 142, 202);
+}
+
+#main-iz ul {
+    background-color: rgb(123, 142, 202); 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    margin-top: 0; 
+    margin-left: 3%; 
+    list-style-type: none; 
+}
+
+#main-iz li {
+    margin: 0; 
+    margin-bottom: 13px; 
+    margin-right: 2%; 
+    margin-top: 10px; 
+}
+
+#container {
+    margin: 0;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+#top {
+    background-color: rgb(78, 16, 16);
+    padding-bottom: 16px;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#top p {
+    margin-left: 10px; 
+    color: white; 
+}
+
+#main-der {
+    display: flex;
+    background-color: rgb(13, 55, 82);
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 30%;
+    padding-right: 10%;
+}
+
+#main-der p {
+    margin: 0;
+    margin-top: 0;
+    padding-left: 15px;
+    padding-right: 20px; 
+    line-height: 1;
+    font-size: 0.8em;
+    color: white;
+    max-width: 90%;
+}
+
+#main-der h2 {
+    margin: 0;
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+hr {
+    width: 100%; 
+    height: 1px; 
+    background-color: rgb(255, 255, 255);
+    margin: 20px 0; 
+}
+
+#foot {
+    background-color: rgb(10, 70, 67);
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    width: 16%; 
+    box-sizing: border-box;
+    margin-bottom: 30%;
+    margin-top: 100px;
+    height: 106vh;
+}
+
+#foot img { 
+    height: 120px; 
+    margin-top: -10px; 
+    margin-left: -50px; 
+    margin-right: 50px; 
+    width: 60%; 
+}
+
+#foot p { 
+    margin: 0; 
+    padding-top: 10px; 
+    margin-right: 95px; 
+    color: white; 
+}
