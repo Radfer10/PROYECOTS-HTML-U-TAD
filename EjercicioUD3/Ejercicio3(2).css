@@ -1,0 +1,15 @@
+#Contenedor
+{
+    display: flex;
+    background-color: rosybrown;
+    row-gap: 50px;
+    column-gap: 50px;
+    padding-bottom: 2%;
+}
+#P1
+{
+    display: flex;
+    background-color: blueviolet;
+
+
+}

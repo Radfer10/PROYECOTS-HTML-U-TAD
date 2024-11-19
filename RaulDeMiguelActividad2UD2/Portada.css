@@ -1,0 +1,79 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(103, 144, 195);
+}
+#Titulo 
+{
+    background-color: rgb(103, 144, 195);
+}
+#Titulo h2 
+{
+    position: absolute; 
+    top: 55%;               
+    left: 62.5%;              
+    text-align: center;     
+    color: rgb(240, 248, 255);
+    font-size: 2.2em;
+}
+h1 
+{
+    padding: 1%;
+    margin-top: 1%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 2.2em;
+    background-color: rgb(147, 204, 235);
+    box-shadow: 5px 5px 10px rgba(0, 68, 124, 0.5);
+    text-decoration: underline;
+    text-decoration-color: rgb(103, 144, 195);
+    color: rgb(240, 248, 255);
+}
+#Titulo img 
+{
+    transform: scale(1.5);
+    box-shadow: 6px 5px 10px rgba(0, 68, 124, 0.5);
+    padding: 1%;
+    margin-top: 10%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 40%;
+    transition: 0.3s ease;
+}
+#Titulo img:hover 
+{
+    transform: scale(1.7);
+}
+#Encabezado 
+{
+    background-color: rgb(147, 204, 235);
+
+}
+#Encabezado li 
+{
+    margin: 0; 
+    margin-bottom: 1%; 
+    margin-right: 5%; 
+    margin-top: 1%;
+    color: aliceblue;
+    text-decoration: underline;
+    text-decoration-color: rgb(103, 144, 195);
+    display: inline-block; 
+    margin-left: 6%;
+}
+#Encabezado ul 
+{
+    text-align: center; 
+    margin: 0; 
+    padding: 0; 
+    list-style-type: none; 
+    transform: scale(1.2);
+}
+
+

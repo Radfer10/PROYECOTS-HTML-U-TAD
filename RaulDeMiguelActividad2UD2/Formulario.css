@@ -1,0 +1,161 @@
+body
+{
+    background-color: rgb(103, 144, 195);
+    color: aliceblue;
+    overflow-X: hidden;
+}
+#Encabezado 
+{
+    background-color: rgb(147, 204, 235);
+}
+h1 
+{
+    padding: 1%;
+    margin-top: 1%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    transform: scale(1.1);
+    background-color: rgb(147, 204, 235);
+    box-shadow: 5px 5px 10px rgba(0, 68, 124, 0.5);
+    text-decoration: underline;
+    text-decoration-color: rgb(103, 144, 195);
+    color: aliceblue;
+}
+#Encabezado li 
+{
+    margin: 0; 
+    margin-bottom: 1%; 
+    margin-right: 5%; 
+    margin-top: 1%;
+    color: aliceblue;
+    text-decoration: underline;
+    text-decoration-color: rgb(103, 144, 195);
+    display: inline-block; 
+    margin-left: 6%;
+}
+#Encabezado ul 
+{
+    text-align: center; 
+    margin: 0; 
+    padding: 0; 
+    list-style-type: none; 
+    transform: scale(1.2);
+}
+#Pregunta1 
+{
+    border-radius: 10%;
+    background-color:rgb(39, 88, 148);
+    box-sizing: border-box; 
+    padding: 2%; 
+    box-shadow: 5px 5px 10px rgba(0, 68, 124, 0.5);
+    margin-bottom: 1%;
+}
+#Pregunta2 
+{
+    border-radius: 10%;
+    background-color:rgb(39, 88, 148);
+    box-sizing: border-box; 
+    padding: 2%; 
+    box-shadow: 5px 5px 10px rgba(0, 68, 124, 0.5);
+    margin-bottom: 1%;
+}
+#Pregunta3 
+{
+    border-radius: 10%;
+    background-color:rgb(39, 88, 148);
+    box-sizing: border-box; 
+    padding: 2%; 
+    box-shadow: 5px 5px 10px rgba(0, 68, 124, 0.5);
+    margin-bottom: 1%;
+}
+#Pregunta4 
+{
+    border-radius: 10%;
+    background-color:rgb(39, 88, 148);
+    box-sizing: border-box; 
+    padding: 2%; 
+    box-shadow: 5px 5px 10px rgba(0, 68, 124, 0.5);
+    margin-bottom: 1%;
+}
+#Pregunta5 
+{
+    border-radius: 10%;
+    background-color:rgb(39, 88, 148);
+    box-sizing: border-box; 
+    padding: 2%; 
+    box-shadow: 5px 5px 10px rgba(0, 68, 124, 0.5);
+    margin-bottom: 1%;
+}
+#Pregunta6 
+{
+    border-radius: 10%;
+    background-color:rgb(39, 88, 148);
+    box-sizing: border-box; 
+    padding: 2%; 
+    box-shadow: 5px 5px 10px rgba(0, 68, 124, 0.5);
+    margin-bottom: 1%;
+}
+#Pregunta7 
+{
+    border-radius: 10%;
+    background-color:rgb(39, 88, 148);
+    box-sizing: border-box; 
+    padding: 2%; 
+    box-shadow: 5px 5px 10px rgba(0, 68, 124, 0.5);
+    margin-bottom: 1%;
+}
+#Pregunta8 
+{
+    border-radius: 10%;
+    background-color:rgb(39, 88, 148);
+    box-sizing: border-box; 
+    padding: 2%; 
+    box-shadow: 5px 5px 10px rgba(0, 68, 124, 0.5);
+    margin-bottom: 1%;
+
+}
+#FormularioDatos form 
+{
+    background-color: #ffffff;
+    border-radius: 0.4%;
+    box-shadow: 5px 5px 10px rgba(0, 68, 124, 0.5);;
+    padding: 1%;
+    transform: scale(0.82);
+}
+#FormularioDatos h3 
+{
+    color: rgb(31, 79, 138);
+    text-align: center;
+    transform: scale(1.5);
+}
+#FormularioDatos label 
+{
+    color: #333;
+}
+#FormularioDatos input 
+{
+    width: 100%;
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1.5%;
+    border: 1px solid #ccc;
+    border-radius: 1%;
+    box-sizing: border-box;
+}
+#Mensaje 
+{
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border: 1px solid #ccc;
+    text-align: center;
+    transform: scale(1.1);
+    background-color: rgb(147, 204, 235);
+    box-shadow: 5px 5px 10px rgba(0, 68, 124, 0.5);
+}
+
+
+
+
+

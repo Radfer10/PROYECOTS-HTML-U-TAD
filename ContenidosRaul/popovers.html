@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Offcanvas and Scrollspy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        /* body {
+            position: relative;
+        }*/
+    </style>
+</head>
+<!--position-relative added-->
+<body data-bs-spy="scroll" class ="position-relative"data-bs-target="#navbar-example" data-bs-theme="dark" data-bs-offset="0" tabindex="0">
+
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-start navbar" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasExampleLabel">Categorias</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body ">
+            <ul class="nav nav-pills flex-column mb-auto">
+                <h4>Botones</h4>
+                <li class="nav-item">
+                    <a href="#section1" class="nav-link" aria-current="page">Button</a>
+                </li>
+                <li>
+                    <a href="#section2" class="nav-link">Button Group</a>
+                </li>
+                <li>
+                    <a href="#section3" class="nav-link">Close Button</a>
+                </li>
+                <h4>Espera</h4>
+                <li class="nav-item">
+                    <a href="#section1" class="nav-link" aria-current="page">Placeholders</a>
+                </li>
+                <li>
+                    <a href="#section2" class="nav-link">Progress</a>
+                </li>
+                <li>
+                    <a href="#section3" class="nav-link">Spinners</a>
+                </li>
+                <h4>Navegación</h4>
+                <li class="nav-item">
+                    <a href="#section1" class="nav-link" aria-current="page">Button</a>
+                </li>
+                <li>
+                    <a href="#section2" class="nav-link">Button Group</a>
+                </li>
+                <li>
+                    <a href="#section3" class="nav-link">Close Button</a>
+                </li>
+                <li>
+                    <a href="#section3" class="nav-link">Close Button</a>
+                </li>
+                <li>
+                    <a href="#section3" class="nav-link">Close Button</a>
+                </li>
+                <h4>Pop-up</h4>
+                <li class="nav-item">
+                    <a href="#section1" class="nav-link" aria-current="page">Button</a>
+                </li>
+                <li>
+                    <a href="#section2" class="nav-link">Button Group</a>
+                </li>
+                <li>
+                    <a href="#section3" class="nav-link">Close Button</a>
+                </li>
+                <li>
+                    <a href="#section3" class="nav-link">Close Button</a>
+                </li>
+                <li>
+                    <a href="#section3" class="nav-link">Close Button</a>
+                </li>
+                <li>
+                    <a href="#section3" class="nav-link">Close Button</a>
+                </li>
+                <h4>Contenido</h4>
+                <li class="nav-item">
+                    <a href="#section1" class="nav-link" aria-current="page">Button</a>
+                </li>
+                <li>
+                    <a href="#section2" class="nav-link">Button Group</a>
+                </li>
+                <li>
+                    <a href="#section3" class="nav-link">Close Button</a>
+                </li>
+                <li>
+                    <a href="#section3" class="nav-link">Close Button</a>
+                </li>
+                <li>
+                    <a href="#section3" class="nav-link">Close Button</a>
+                </li>
+                <li>
+                    <a href="#section3" class="nav-link">Close Button</a>
+                </li>
+                <li>
+                    <a href="#section3" class="nav-link">Close Button</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Navbar to trigger offcanvas -->
+
+<!-- Scrollspy Navbar -->
+<nav id="navbar-example2" class="navbar px-3 mb-3 sticky-top bg-dark">
+    <div>
+        <button class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <span class="navbar-toggler-icon p-4"></span>
+        </button> 
+    </div>
+    <div>
+    <ul class="nav nav-pills">
+      <li class="nav-item m-1">
+        <a class="nav-link bg-secondary text-dark" href="#scrollspyHeading1">Componente</a>
+      </li>
+      <li class="nav-item m-1">
+        <a class="nav-link bg-secondary text-dark" href="#scrollspyHeading2">Para que sirve</a>
+      </li>
+      <li class="nav-item m-1">
+        <a class="nav-link bg-secondary text-dark" href="#scrollspyHeading3">Etiquetas HTML</a>
+      </li>
+      <li class="nav-item m-1">
+        <a class="nav-link bg-secondary text-dark" href="#scrollspyHeading4">Atributos</a>
+      </li>
+      <li class="nav-item m-1">
+        <a class="nav-link bg-secondary text-dark" href="#scrollspyHeading5">Variantes</a>
+      </li>
+      <li class="nav-item m-1">
+        <a class="nav-link bg-secondary text-dark" href="#scrollspyHeading5">Ejemplo</a>
+      </li>
+    </div>
+    </ul>
+  </nav>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+    <h4 id="scrollspyHeading1">Componente</h4>
+    <h1>Popovers</h1>
+    <h4 id="scrollspyHeading2">Para que sirve</h4>
+    <p> Los popovers en Bootstrap son componentes que se utilizan para mostrar información adicional sobre 
+        un elemento cuando el usuario interactúa con él, generalmente al hacer clic o pasar el ratón sobre dicho elemento. 
+        Son similares a los tooltips, pero con la capacidad de contener contenido más rico y estructurado, como encabezados, 
+        texto e incluso HTML.</p>
+    <p>Sus funcionalidades pueden ser: </p>
+    <ul>
+        <li><strong>Información Adicional:</strong></li>
+        <li><strong>Organización y Navegación</strong></li>
+        <li><strong>Mejora de la Experiencia del Usuario</strong></li>
+    </ul>
+    <h4 id="scrollspyHeading3">Etiquetas HTML</h4>
+    <p>Para habilitar ventanas emergentes con <code>popovers</code> se deben inicializar los elementos emergentes antes de poder usarlos. 
+        Una forma de inicializar todos los elementos emergentes de una página sería seleccionarlos por su <code>data-bs-toggle</code> atributo, 
+        de la siguiente manera:</p>
+    <div class="border border-light">
+        <pre><xmp>
+            const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+            const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+        </xmp></pre>
+    </div>
+    <p>Los títulos se configuran mediante <code>data-bs-title</code> y el contenido del cuerpo mediante <code>data-bs-content</code>.</p>
+    <div class="border border-light">
+        <pre><xmp>
+            data-bs-toggle="popover": Le dice a Bootstrap que el elemento asociado debe activar un popover cuando se interactúa con él.
+            data-bs-title="Popover title": Proporciona el texto que se mostrará como el título del popover cuando se active.
+        </xmp></pre>
+    </div>
+    <h4 id="scrollspyHeading5">Variantes</h4>
+    <p>Existe una variante de <code>Popovers</code> llamados deshabilitados que se refieren a componentes de la interfaz de usuario que, 
+        aunque se presentan visualmente dentro del popover, están desactivados y no pueden ser interactuados por el usuario. Esto suele ser 
+        útil cuando se desea mostrar elementos que no están disponibles temporalmente o que requieren ciertas condiciones para ser activados.</p>
+    <p>Los elementos con el <code>disabled</code> atributo no son interactivos, lo que significa que los usuarios no pueden pasar el cursor sobre ellos ni hacer 
+        clic en ellos para activar una ventana emergente (o información sobre herramientas). Como solución alternativa, deberá activar la ventana 
+        emergente desde un contenedor <code>&lt;div&gt;</code> o <code>&lt;span&gt;</code>, idealmente y hacer que se pueda enfocar con el teclado usando <code>tabindex="0"</code>.</p>
+        <div class="border border-light">
+            <pre><xmp>
+                <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">
+                    <button class="btn btn-primary" type="button" disabled>Disabled button</button>
+                  </span>
+            </xmp></pre>
+        </div>
+    <h4 id="scrollspyHeading6">Ejemplo</h4>
+    <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+    <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+        Popover on top
+      </button>
+      <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">
+        Popover on right
+      </button>
+      <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
+        Popover on bottom
+      </button>
+      <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">
+        Popover on left
+      </button>
+    <p>
+        En este ejemplo, podemos ver un código que utiliza la clase popovers de Bootstrap para desplegar mensajes emergentes sobre los botones. 
+        Cada botón genera un popover que se muestra en diferentes direcciones según se especifica en la línea de código correspondiente.
+    </p>
+    <ul>
+        <li><strong>Botones: </strong>Cada botón está estilizado con Bootstrap y contiene un texto que describe la posición del <code>popover</code>.</li>
+        <li><strong>Popovers: </strong>Son activados por los botones y muestran información adicional 
+            en diferentes posiciones (<code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code>).</li>
+        <li><strong>Artributos de Datos:</strong>Utilizan <code>data-bs-toggle</code>, <code>data-bs-placement</code>, y <code>data-bs-content</code> para configurar los popovers.</li>
+    </ul>
+    <div class="border border-light">
+        <pre><xmp>
+            <div class="border border-light">
+                <pre><xmp>
+                    <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                        Popover on top
+                      </button>
+                      <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">
+                        Popover on right
+                      </button>
+                      <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
+                        Popover on bottom
+                      </button>
+                      <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">
+                        Popover on left
+                      </button>
+                </xmp></pre>
+            </div>
+        </xmp></pre>
+    </div>
+  <p>by Raul</p>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

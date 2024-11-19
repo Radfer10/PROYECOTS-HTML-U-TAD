@@ -1,0 +1,259 @@
+#Contenedor
+{
+    display: grid;
+    grid-template-rows: 20% 30% 80%;
+    grid-template-areas:
+    "head"
+    "body1"
+    "body2";
+    background-color: rgb(245, 245, 220);
+    height: 100%;
+    padding-bottom: 40%;
+}
+
+#G1
+{
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#G1header1
+{
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    margin-top: 3%;
+    margin-left: 1%;
+    color: rgb(174, 125, 94);
+
+}
+#G1header2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2%;
+    background-color:  rgb(174, 125, 94);
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+}
+#G1header2 a
+{
+    color: wheat;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    
+}
+#G1header2 p:hover
+{
+    transform: scale(1.2);
+}
+
+#G2
+{
+    grid-area: body1;
+}
+
+#G2main h1
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    color: rgb(174, 125, 94);
+}
+
+#G2main p
+{
+    display: flex;
+    justify-content: center;
+    margin-left: 2%;
+    color: rgb(174, 125, 94);;
+}
+#G2main hr
+{
+    border-color: rgb(174, 125, 94);
+}
+#G3
+{
+    grid-area: body2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+
+#G3flecha1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 20%;
+    text-align: center;
+    margin-left: 2%;
+    transition: transform 0.3s ease;
+}
+#G3flecha1:hover
+{
+    transform: scale(1.3);
+}
+#G3img1
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    transition: transform 0.3s ease;
+}
+#G3img1 a
+{
+    color: rgb(174, 125, 94);
+    text-decoration: none;
+    text-align: center;
+}
+#G3img1:hover
+{
+    transform: scale(1.1);
+}
+#G3flecha2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 20%;
+    text-align: center;
+    margin-right: 2%;
+    transition: transform 0.3s ease;
+
+}
+#G3flecha2:hover
+{
+    transform: scale(1.3);
+}
+
+#G3restimg1
+{
+    display: none;
+}
+#G3restimg2
+{
+    display: none;
+}
+#G3restimg3
+{
+    display: none;
+}
+#G3restimg4
+{
+    display: none;
+}
+
+@media screen and (min-width: 1200px)
+{
+
+    #G3img1
+    {
+        display: none;
+    }
+
+    #G3restimg1
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 2%;
+        align-items: center;
+        justify-content: center;
+        background-color: aliceblue;
+        color: rgb(174, 125, 94);
+        transition: transform 0.3s ease;
+    }
+    #G3restimg1:hover
+    {
+        transform: scale(1.2);
+    }
+    #G3restimg1 a
+    {
+        color: rgb(174, 125, 94);
+        text-decoration: none;
+        text-align: center;
+    }
+
+    #G3restimg2
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 2%;
+        align-items: center;
+        justify-content: center;
+        background-color: aliceblue;
+        color: rgb(174, 125, 94);
+        transition: transform 0.3s ease;
+    }
+    #G3restimg2:hover
+    {
+        transform: scale(1.3);
+    }
+    #G3restimg2 a
+    {
+        color: rgb(174, 125, 94);
+        text-decoration: none;
+        text-align: center;
+    }
+    #G3restimg3
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 2%;
+        align-items: center;
+        justify-content: center;
+        background-color: aliceblue;
+        color: rgb(174, 125, 94);
+        transition: transform 0.3s ease;
+    }
+    #G3restimg3:hover
+    {
+        transform: scale(1.3);
+    }
+    #G3restimg3 a
+    {
+        color: rgb(174, 125, 94);
+        text-decoration: none;
+        text-align: center;
+    }
+    #G3restimg4
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 2%;
+        align-items: center;
+        justify-content: center;
+        background-color: aliceblue;
+        color: rgb(174, 125, 94);
+        transition: transform 0.3s ease;
+    }
+    #G3restimg4:hover
+    {
+        transform: scale(1.3);
+    }
+    #G3restimg4 a
+    {
+        color: rgb(174, 125, 94);
+        text-decoration: none;
+        text-align: center;
+    }
+
+
+}
+@media screen and (min-width: 1440px)
+{
+    #Contenedor
+    {
+        height: 100vh;
+    }
+
+}

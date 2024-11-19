@@ -48,14 +48,10 @@ body {
 }
 
 #main-der {
-    display: flex;
     background-color: rgb(13, 55, 82);
     margin-left: 0;
     margin-right: 0;
-    flex-direction: column;
     padding: 0;
-    justify-content: flex-start;
-    align-items: flex-start;
     padding-bottom: 30%;
     padding-right: 10%;
 }
@@ -72,8 +68,6 @@ body {
 }
 
 #main-der h2 {
-    margin: 0;
-    margin-top: 0;
     color: rgb(255, 255, 255);
     margin-bottom: 40px;
     margin-top: 30px;

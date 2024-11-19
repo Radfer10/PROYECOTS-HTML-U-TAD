@@ -1,0 +1,10 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(174, 125, 94);
+    color: wheat;
+    overflow-X: hidden;
+    justify-content: center;
+    align-items: center;
+}

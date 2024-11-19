@@ -1,0 +1,189 @@
+#container
+{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 10% 40% 60% 10%;
+    grid-template-areas:
+        "head head   lat"
+        "main main   lat"
+        "main2 main2 lat"
+        "foot foot   lat";
+    height: 100vh;
+}
+#E1
+{
+    background-color: yellow;
+    grid-area: head;
+    border-bottom: solid 1px black;
+    border-top: solid 1px black;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+}
+#E1 h1
+{
+    text-align: center;
+    transform: scale(10);
+    margin-top: 2%;
+
+}
+#E2
+{
+    background-color: red;
+    grid-area: main;
+    border-bottom: solid 1px black;
+    border-top: solid 1px black;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    grid-template-areas:
+        "m m"
+        "m2 ."
+        "m2  f";
+    
+}
+
+#E2 h1
+{
+    grid-area: m;
+    text-align: center;
+    transform: scale(7);
+    margin-top: 10%;
+
+}
+#E2p
+{
+    grid-area: m2;
+    text-align: center;
+    transform: scale(5);
+    margin-top: 13%;
+}
+#E2p2
+{
+    grid-area: f;
+    transform: scale(4);
+    margin-left: 25%;
+    margin-bottom: 10%;
+}
+#E3
+{
+    background-color: green;
+    display: grid;
+    grid-area: foot;
+    border-bottom: solid 1px black;
+    border-top: solid 1px black;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    padding-bottom: 15%;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas:
+        "m m2";
+    padding-bottom: 25%;
+}
+#E3 h1
+{
+    grid-area: m;
+    transform: scale(4);
+    text-align: center;
+    margin-top: 30%;
+}
+#E3 img
+{
+    grid-area: m2;
+}
+#E3 p
+{
+    grid-area: m2;
+    transform: scale(4);
+    margin-top: 43%;
+    margin-left: 28%;
+    
+}
+#E4
+{
+    background-color: pink;
+    grid-area: lat;
+    border-bottom: solid 1px black;
+    border-top: solid 1px black;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    width: 50%;
+    height: 100%;
+    padding-bottom: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35% 35% 35%;
+    grid-template-areas:
+        "m"
+        "."
+        "b"
+        "f";
+}
+#E4uno
+{
+    grid-area: m;
+    text-align: center;
+    transform: scale(3);
+    margin-top: 60%;
+}
+#E4dos
+{
+    grid-area: b;
+    text-align: center;
+    transform: scale(3);
+    margin-top: 10%;
+}
+#E4tres
+{
+    grid-area: f;
+    text-align: center;
+    transform: scale(3);
+}
+#E5
+{
+    grid-area: main2;
+    background-color: blue;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 30% 20% 80%;
+    grid-template-areas:
+        ". m ."
+        ". b ."
+        ". f .";
+}
+
+#E5 img
+{
+    display: flex;
+    align-items: center;
+    grid-area: m;
+    transform: scale(2);
+    margin-top: 28%;
+    margin-left: 20%;
+}
+
+#E5 h1
+{
+    grid-area: b;
+    transform: scale(2);
+    margin-top: 55%;
+}
+#E5 p
+{
+    grid-area: f;
+    transform: scale(3.5);
+    column-rule: 2px;
+    column-count: 3;
+    margin-top: 75%; 
+    margin-left: 10%;
+    margin-right: 10%;
+}
+@media screen and (max-width: 760px) 
+{
+    #Contenedor 
+    {
+        flex-direction: column;
+        column-gap: 0;
+    }
+}
