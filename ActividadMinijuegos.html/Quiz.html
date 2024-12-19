@@ -12,18 +12,17 @@
     <nav id="header" class="navbar px-4  sticky-top bg-dark">
         <div class="d-flex justify-content-start gap-2">
             <button type="button" class="btn btn-danger fw-bold" onclick="window.location.href='PaginaPrincipalMinijuegos.html';">HOME</button>
-            <button type="button" class="btn btn-danger fw-bold" onclick="window.location.href='.html';">Quizt</button>
-            <button type="button" class="btn btn-danger fw-bold" onclick="window.location.href='Candy.html';">Candy Crush</button>
+            <button type="button" class="btn btn-danger fw-bold" onclick="window.location.href='.html';">QUIZ</button>
+            <button type="button" class="btn btn-danger fw-bold" onclick="window.location.href='Candy.html';">AJEDREZ</button>
         </div>
     </nav>
     <div class=" d-flex flex-col justify-content-center m-2"> 
         <div class="marcador rounded shadow bg-white">
             <h3>SCORE</h2>
-            <h3 id="score"></h3>
         </div>
     </div>
     <div class=" d-flex flex-col justify-content-center">
-        <div  class="tablero d-flex flex-wrap p-3  text-success rounded shadow bg-white mb-2" > 
+        <div id="score" class="tablero d-flex flex-wrap p-3  text-success rounded shadow bg-white mb-2">
         </div>
     </div>
     <div class="bodyquiz">
@@ -45,7 +44,9 @@
     <div id="ventanaResumen" class="ventanaResumen">
             <h1>Resumen</h1>
             <p>¡Felicidades has terminado el juego!</p>
-            <button class="botonFinal">Jugar de Nuevo</button>
+            <p id="resultadoFinal">SCORE: <span id="contadorRespuestas">0</span> de <span id="totalPreguntas">0</span> preguntas correctas</p>
+            <button class="botonFinal" onclick="window.location.href='Quiz.html'">Jugar de Nuevo</button>
+
         </div>
     <script src="basepreguntas.js"></script>
     <script defer src="Quizt.js"></script>

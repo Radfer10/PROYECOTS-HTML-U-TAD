@@ -27,6 +27,8 @@ function cargarPregunta(index)
     document.getElementById("opcion3").innerHTML = opciones[2];
     document.getElementById("opcion4").innerHTML = opciones[3];
 }
+let contador = 0;
+let contadorTotalPreguntas = 0;
 
 function elegirOpcion(index)
 {
@@ -37,16 +39,21 @@ function elegirOpcion(index)
     if (validez)
     {
         opcionCorrecta.style.backgroundColor = 'green';
+        contador++;
+        contadorTotalPreguntas++;
+        document.getElementById("score").textContent = contador + "/" + contadorTotalPreguntas
     }
     else
     {
         opcionSeleccionada.style.backgroundColor = 'red';
         opcionCorrecta.style.backgroundColor = 'green';
+        contadorTotalPreguntas++;
     }
     document.getElementById("siguiente").style.display = "block";
   
     
 }
+
 
 function siguientePregunta()
 {
@@ -54,6 +61,9 @@ function siguientePregunta()
         {
             document.getElementById("ventanaResumen").style.display = "block";
             document.getElementById("ventanaResumen").scrollIntoView({ behavior: 'smooth' });
+
+            document.getElementById("contadorRespuestas").textContent = contador; 
+            document.getElementById("totalPreguntas").textContent = baseDePreguntas.length; 
 
         }
         else
