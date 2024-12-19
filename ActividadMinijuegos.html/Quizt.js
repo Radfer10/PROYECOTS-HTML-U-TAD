@@ -41,7 +41,7 @@ function elegirOpcion(index)
         opcionCorrecta.style.backgroundColor = 'green';
         contador++;
         contadorTotalPreguntas++;
-        document.getElementById("score").textContent = contador + "/" + contadorTotalPreguntas
+        document.getElementById("score").textContent = contador + "/" + contadorTotalPreguntas;
     }
     else
     {
@@ -50,9 +50,9 @@ function elegirOpcion(index)
         contadorTotalPreguntas++;
     }
     document.getElementById("siguiente").style.display = "block";
-  
     
 }
+
 
 
 function siguientePregunta()
@@ -72,6 +72,7 @@ function siguientePregunta()
             resetColor();
             cargarPregunta(indexPregunta)
         }
+        document.getElementById("siguiente").style.display = "none";
        
     
 }
