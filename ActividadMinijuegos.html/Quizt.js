@@ -53,6 +53,7 @@ function siguientePregunta()
     if (indexPregunta >= baseDePreguntas.length - 1)
         {
             document.getElementById("ventanaResumen").style.display = "block";
+            document.getElementById("ventanaResumen").scrollIntoView({ behavior: 'smooth' });
 
         }
         else

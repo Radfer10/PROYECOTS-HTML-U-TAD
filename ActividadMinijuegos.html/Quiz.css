@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #FFC000;
+    background-color: #87CEEB;
     font-family: Arial, sans-serif;
 }
 
@@ -101,7 +101,7 @@ nav {
     font-size: 1rem;
     border: 2px solid #6c757d;
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: #92c5FC;
     
 }
 
@@ -112,20 +112,17 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
     display: none;
     border: 2px solid #6c757d;
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: #FDFD96;
 }
-#ventanaResumen h1, p, button
+.ventanaResumen h1, p, .botonFinal
 {
-    
     text-align: center;
-    align-items: center;
-    margin: 0;
+    margin: 5px 0;
 }
-#ventanaResumen button
+.botonFinal
 {
     padding: 10px;
     font-size: 1rem;
@@ -133,7 +130,11 @@ nav {
     border-radius: 5px;
     background-color: #ffffff;
     margin-bottom: 3px;
-    align-self: center;
+    cursor: pointer;
+    width: auto; 
+    display: block; 
+    margin: 10px auto;
+    background-color: #92c5FC;
 }
 
 
