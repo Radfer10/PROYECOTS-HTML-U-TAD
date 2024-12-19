@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="Titulo" class="bg-slate-500 mb-2 justify-center text-center">
+        <div><strong>CALCULADORA</strong></div>
+    </div>
+    <div id="Titulo2" class="grid grid-cols-2 gap-2 mb-2">
+        <div class="bg-slate-500 justify-center text-center"><strong>Historial</strong></div>
+        <div class="bg-slate-500 justify-center text-center"><strong>Actual</strong></div>
+
+    </div>
+
+        <div id="HeaderSalida" class="grid grid-cols-2 gap-2 mb-2">
+            <div class="bg-slate-500 h-36 p-2 overflow-auto scroll-p-0" id="Pantalla1"></div>
+            <div class="bg-slate-500 h-36 p-2 overflow-auto" id="Pantalla2"></div>
+
+        </div>
+        <strong><div id="Teclado" class="grid grid-cols-4 grid-row-5 gap-2">
+            <button class="bg-red-600  h-24 flex justify-center items-center" id="M+" onclick="PushValor('M+');">M+</button>
+            <button class="bg-red-600  h-24 flex justify-center items-center" id="MR" onclick="GuardarValor('MR');">MR</button>
+            <button class="bg-red-600  h-24 flex justify-center items-center" id="CA" onclick="BorrarHistorial('CA');">CA</button>
+            <button class="bg-blue-900 h-24 flex justify-center items-center" id="C" onclick="Borrar('C');">C</button>
+
+            <button class="bg-sky-700  h-24 flex justify-center items-center" id="1" onclick="Añadir('1');">1</button>
+            <button class="bg-sky-700  h-24 flex justify-center items-center" id="2" onclick="Añadir('2');">2</button>
+            <button class="bg-sky-700  h-24 flex justify-center items-center" id="3" onclick="Añadir('3');">3</button>
+            <button class="bg-red-500  h-24 flex justify-center items-center" id="+" onclick="Añadir('+');">+</button>
+
+            <button class="bg-sky-700 h-24 flex justify-center items-center" id="4" onclick="Añadir('4');">4</button>
+            <button class="bg-sky-700 h-24 flex justify-center items-center" id="5" onclick="Añadir('5');">5</button>
+            <button class="bg-sky-700 h-24 flex justify-center items-center" id="6" onclick="Añadir('6');">6</button>
+            <button class="bg-red-500 h-24 flex justify-center items-center" id="-" onclick="Añadir('-');">-</button>
+
+            <button class="bg-sky-700 h-24 flex justify-center items-center" id="7" onclick="Añadir('7');">7</button>
+            <button class="bg-sky-700 h-24 flex justify-center items-center" id="8" onclick="Añadir('8');">8</button>
+            <button class="bg-sky-700 h-24 flex justify-center items-center" id="9" onclick="Añadir('9');">9</button>
+            <button class="bg-red-500 h-24 flex justify-center items-center" id="*" onclick="Añadir('*');">*</button>
+
+            <button class="bg-sky-700 h-24 flex justify-center items-center" id="." onclick="Añadir('.');">.</button>
+            <button class="bg-sky-700 h-24 flex justify-center items-center" id="0" onclick="Añadir('0');">0</button>
+            <button class="bg-green-800 h-24 flex justify-center items-center" id="=" onclick="Calcular();">=</button>
+            <button class="bg-red-500 h-24 flex justify-center items-center" id="/" onclick="Añadir('/');"
+            >/</button>
+        </div></strong>
+        <script>
+            var historial = [];
+            var valorGuardado = '';
+            function Añadir (id)
+            {
+                document.getElementById("Pantalla2").innerHTML += id;
+            }
+            function Calcular()
+            {
+                let operaciones = document.getElementById("Pantalla2").innerHTML;
+                let resultado = eval(operaciones);
+                
+                
+                document.getElementById("Pantalla2").innerHTML = resultado;
+
+                
+                historial.push(operaciones + "=" + resultado);
+                document.getElementById("Pantalla1").innerHTML = historial.join("<br>");
+            }
+            function Borrar()
+            {
+                document.getElementById("Pantalla2").innerHTML= ' ';
+
+            }
+            function BorrarHistorial()
+            {
+                historial.length = 0;
+                document.getElementById("Pantalla2").innerHTML= ' ';
+                document.getElementById("Pantalla1").innerHTML = ' ';
+            }
+            function GuardarValor()
+            {
+                valorGuardado = document.getElementById("Pantalla2").innerHTML;
+            }
+            function PushValor()
+            {
+                document.getElementById("Pantalla2").innerHTML = (document.getElementById("Pantalla2").innerHTML + valorGuardado);
+            }
+        </script>
+</body>
+</html>

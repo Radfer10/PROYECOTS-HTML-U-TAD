@@ -1,0 +1,18 @@
+[
+    {
+      "question": "¿Cuál es la capital de Francia?",
+      "options": ["Madrid", "París", "Roma", "Berlín"],
+      "answer": "París"
+    },
+    {
+      "question": "¿Cuánto es 5 + 3?",
+      "options": ["5", "8", "10", "15"],
+      "answer": "8"
+    },
+    {
+      "question": "¿Qué lenguaje se utiliza principalmente para el desarrollo web?",
+      "options": ["Python", "C++", "JavaScript", "Java"],
+      "answer": "JavaScript"
+    }
+  ]
+  

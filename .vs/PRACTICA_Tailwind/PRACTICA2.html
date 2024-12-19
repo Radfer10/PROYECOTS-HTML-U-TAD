@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="elTexto">Un texto cualquiera</p>
+    <button onclick="miFunc('Un valor que paso');">Haz Click</button>
+    <button onclick="miFunc2();">y aquí</button>
+    <script>
+        function miFunc(v)
+        {
+            elem=document.getElementById("elTexto");
+            elem.innerHTML=v;
+        }
+        function miFunc2()
+        {
+            elem=document.getElementById("elTexto");
+            elem.innerHTML="Un texto otra vez";
+        }
+    </script>
+</body>
+</html>
